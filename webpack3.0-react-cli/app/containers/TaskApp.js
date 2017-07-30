@@ -1,5 +1,6 @@
 import React from 'react';
 import Header from './Header/Header';
+import PropTypes from 'prop-types';
 class TaskApp extends React.Component {
 	constructor() {
 		super();
@@ -9,9 +10,11 @@ class TaskApp extends React.Component {
 	}
 	render() {
 		return (<div className="app-all-wrapper">
-			<Header/>
+			<Header/>{this.props.test}
 		</div>)
 	}
 }
-
+TaskApp.propTypes={
+	test:PropTypes.string
+}
 export default TaskApp;

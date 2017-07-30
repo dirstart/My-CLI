@@ -13,6 +13,6 @@ import './index.css'
 // const store = createStore(commentsReducer)
 
 ReactDOM.render(
-	<TaskApp />,
+	<TaskApp  test="123" />,
 	document.getElementById('root')
 );
